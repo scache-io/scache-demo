@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/scache-io/scache-demo/models"
 	"github.com/scache-io/scache/cache"
 	"github.com/scache-io/scache/config"
-	"github.com/scache-io/scache-demo/models"
 )
 
 func main() {
-	fmt.Println("=== SCache 演示项目 ===\n")
+	fmt.Println("=== SCache 演示项目 ===")
 
 	// 1. 基础缓存操作
 	basicCacheDemo()

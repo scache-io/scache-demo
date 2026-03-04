@@ -4,10 +4,10 @@ import "time"
 
 // User 用户模型
 type User struct {
-	ID       int       `json:"id"`
-	Name     string    `json:"name"`
-	Email    string    `json:"email"`
-	Age      int       `json:"age"`
+	ID        int       `json:"id"`
+	Name      string    `json:"name"`
+	Email     string    `json:"email"`
+	Age       int       `json:"age"`
 	CreatedAt time.Time `json:"created_at"`
 }
 
