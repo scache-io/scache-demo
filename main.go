@@ -525,7 +525,13 @@ func globalCacheAPIDemo() {
 	}
 
 	// 使用全局 API 存储结构体
-	globalUser := models.User{ID: 1, Name: "全局张三"}
+	globalUser := models.User{
+		ID:        2,
+		Name:      "全局张三",
+		Email:     "global@example.com",
+		Age:       30,
+		CreatedAt: time.Now(),
+	}
 	err := scache.Store("global:user:obj", globalUser, time.Hour)
 	if err == nil {
 		fmt.Println("✓ 使用全局 API 存储结构体")
